@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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" />
+    <title>Machine Learning Roadmap</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: linear-gradient(to right, #005094, #ff0000);
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: #004080;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 0.2;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        header h1:hover {
+            transform: scale(1.1);
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        header img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .roadmap-container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .step {
+            border-left: 5px solid #d92518;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step h2 {
+            color: #d92518;
+            transition: color 0.3s ease;
+        }
+
+        .step:hover h2 {
+            color: #a71d1d;
+        }
+
+        .step ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .step ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .step ul li:hover {
+            transform: translateY(-2px);
+            background: #e9e9e9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="data:image/png;base64,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"
+            alt="Veron Institute Logo">
+        <h1>Veron Institute</h1>
+        <h1>Python Roadmap</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" width="100" alt="Python Logo">
+    </header>
+
+    <div class="roadmap-container">
+        <div class="step">
+            <h2><i class="fas fa-cogs"></i> Step 1: PYTHON - Basic Building</h2>
+            <ul>
+                <li><i class="fas fa-book-open"></i> Basic Building Blocks: Introduction Of Python And Comparison With
+                    Other Programming Languages</li>
+                <li><i class="fas fa-puzzle-piece"></i> Python Objects, Number & Booleans, Strings</li>
+                <li><i class="fas fa-cogs"></i> Container Objects, Mutability Of Objects</li>
+                <li><i class="fas fa-code"></i> Operators:
+                    <ul>
+                        <li><i class="fas fa-plus"></i> Arithmetic</li>
+                        <li><i class="fas fa-bitcoin"></i> Bitwise</li>
+                        <li><i class="fas fa-equals"></i> Comparison</li>
+                        <li><i class="fas fa-arrow-right"></i> Assignment</li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-arrows-alt-v"></i> Operator's Precedence And Associativity</li>
+                <li><i class="fas fa-clipboard-list"></i> Conditions (If Else, If-Elif-Else)</li>
+                <li><i class="fas fa-sync-alt"></i> Loops (While, For)</li>
+                <li><i class="fas fa-arrow-circle-right"></i> Break And Continue Statement And Range Function</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 2: PYTHON - Data Structures</h2>
+            <ul>
+                <li><i class="fas fa-database"></i> Basic Data Structure In Python</li>
+                <li><i class="fas fa-font"></i> String Object Basics</li>
+                <li><i class="fas fa-code"></i> String Inbuilt Methods</li>
+                <li><i class="fas fa-link"></i> Splitting And Joining Strings</li>
+                <li><i class="fas fa-paint-brush"></i> String Format Functions</li>
+                <li><i class="fas fa-list-ol"></i> List Methods</li>
+                <li><i class="fas fa-list-ol"></i> List As Stack And Queues</li>
+                <li><i class="fas fa-list-ol"></i> List Comprehensions</li>
+                <li><i class="fas fa-database"></i> Tuples, Sets & Dictionary Object Methods</li>
+                <li><i class="fas fa-database"></i> Dictionary Comprehensions</li>
+                <li><i class="fas fa-database"></i> Dictionary View Objects</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 3: PYTHON - Functions and Functional Programming</h2>
+            <ul>
+                <li><i class="fas fa-code"></i> Basics of Functions: Definition, Calling, and Scope</li>
+                <li><i class="fas fa-arrow-right"></i> Parameter Passing: Positional, Keyword, and Default Arguments
+                </li>
+                <li><i class="fas fa-sync-alt"></i> Iterators and Generator Functions: Yield Statement and Use Cases
+                </li>
+                <li><i class="fas fa-lambda"></i> Lambda Functions: Anonymous Functions and Use Cases</li>
+                <li><i class="fas fa-filter"></i> Functional Programming: Using Map, Reduce, and Filter Functions</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-shapes"></i> Step 4: PYTHON - OOP Concepts</h2>
+            <ul>
+                <li><i class="fas fa-cube"></i> OOP Basic Concepts</li>
+                <li><i class="fas fa-file-code"></i> Creating Classes</li>
+                <li><i class="fas fa-columns"></i> Pillars Of OOP:
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i> Inheritance</li>
+                        <li><i class="fas fa-sync-alt"></i> Polymorphism</li>
+                        <li><i class="fas fa-lock"></i> Encapsulation</li>
+                        <li><i class="fas fa-eye"></i> Abstraction</li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-wrench"></i> Decorator Class Methods And Static Methods</li>
+                <li><i class="fas fa-magic"></i> Special (Magic/Dunder) Methods</li>
+                <li><i class="fas fa-key"></i> Property Decorators - Getters, Setters, And Deletes</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 5: PYTHON - <i class="fas fa-file-alt"></i> Files & <i class="fas fa-bug"></i> Exception Handling &
+                <i class="fas fa-memory"></i> Memory Management</h2>
+            <ul>
+                <li><i class="fas fa-file-alt"></i> Working With Files</li>
+                <li><i class="fas fa-file-import"></i> Reading And Writing Files</li>
+                <li><i class="fas fa-file-export"></i> Buffered Read And Write</li>
+                <li><i class="fas fa-file-code"></i> Other File Methods</li>
+                <li><i class="fas fa-book"></i> Logging, Debugger</li>
+                <li><i class="fas fa-puzzle-piece"></i> Modules And Import Statements</li>
+                <li><i class="fas fa-bug"></i> Exceptions Handling With Try-Except</li>
+                <li><i class="fas fa-bug"></i> Custom Exception Handling</li>
+                <li><i class="fas fa-list"></i> List Of General Use Exceptions</li>
+                <li><i class="fas fa-check-circle"></i> Best Practice Exception Handling</li>
+                <li><i class="fas fa-sync-alt"></i> Multithreading</li>
+                <li><i class="fas fa-sync-alt"></i> Multiprocessing</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fab fa-git-alt"></i> Step 6: VERSION CONTROL - GIT</h2>
+            <ul>
+                <li><i class="fas fa-info-circle"></i> Introduction to Version Control Systems</li>
+                <li><i class="fas fa-laptop-code"></i> Setting up Git and Initializing Repositories</li>
+                <li><i class="fas fa-terminal"></i> Basic Git Commands: Clone, Add, Commit, Push, Pull</li>
+                <li><i class="fas fa-code-branch"></i> Working with Branches: Create, Merge, and Resolve Conflicts</li>
+                <li><i class="fas fa-users"></i> Collaborating Using Git: Forks, Pull Requests, and Merging Changes</li>
+                <li><i class="fab fa-github-alt"></i> Using GitHub for Collaboration</li>
+                <li><i class="fas fa-eye-slash"></i> Understanding .gitignore</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 7: PYTHON - Pandas, ML Toolbox <i class="fas fa-boxes"></i></h2>
+            <ul>
+                <li><i class="fas fa-list-ul"></i> Categorical Data</li>
+                <li><i class="fas fa-calendar-alt"></i> Date Functionality</li>
+                <li><i class="fas fa-filter"></i> Indexing &amp; Selecting Data</li>
+                <li><i class="fas fa-sync-alt"></i> Iteration</li>
+                <li><i class="fas fa-cogs"></i> Options &amp; Customization</li>
+                <li><i class="fas fa-table"></i> Pandas - Basic Functionality</li>
+                <li><i class="fas fa-table"></i> Pandas - Data Frame</li>
+                <li><i class="fas fa-table"></i> Pandas - Panel</li>
+                <li><i class="fas fa-table"></i> Pandas - Re Indexing</li>
+                <li><i class="fas fa-table"></i> Pandas - Series</li>
+                <li><i class="fas fa-table"></i> Pandas - Sorting</li>
+                <li><i class="fas fa-table"></i> Pandas - Tools</li>
+                <li><i class="fas fa-table"></i> Pandas - Visualization</li>
+                <li><i class="fas fa-table"></i> Pandas - Window Functions</li>
+                <li><i class="fas fa-file-import"></i> Reading Data From Different File Systems</li>
+                <li><i class="fas fa-calculator"></i> Statistical Functions</li>
+                <li><i class="fas fa-clock"></i> Time Delta</li>
+                <li><i class="fas fa-font"></i> Working With Text Data</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 8: PYTHON - Numpy, Visualization <i class="fas fa-boxes"></i></h2>
+            <ul>
+                <li><i class="fas fa-list-ul"></i> Array Attributes</li>
+                <li><i class="fas fa-table"></i> Array Creation Routines</li>
+                <li><i class="fas fa-upload"></i> Array From Existing Data</li>
+                <li><i class="fas fa-arrows-alt"></i> Array From Numerical Ranges</li>
+                <li><i class="fas fa-cogs"></i> Array Manipulation</li>
+                <li><i class="fas fa-calculator"></i> Arithmetic Operations</li>
+                <li><i class="fas fa-plus-circle"></i> Binary Operators</li>
+                <li><i class="fas fa-sync-alt"></i> Byte Swapping</li>
+                <li><i class="fas fa-copy"></i> Copies & Views</li>
+                <li><i class="fas fa-crosshairs"></i> Indexing & Slicing</li>
+                <li><i class="fas fa-sync-alt"></i> Iterating Over Array</li>
+                <li><i class="fas fa-calculator"></i> Linear Algebra</li>
+                <li><i class="fas fa-table"></i> Matrix Library</li>
+                <li><i class="fas fa-palette"></i> Matplotlib</li>
+                <li><i class="fas fa-cube"></i> Nd Array Object</li>
+                <li><i class="fas fa-plus-circle"></i> Numpy - Advanced Indexing</li>
+                <li><i class="fas fa-arrows-alt"></i> Numpy - Broadcasting</li>
+                <li><i class="fas fa-list-ul"></i> Numpy - Data Types</li>
+                <li><i class="fas fa-calculator"></i> Numpy - Mathematical Functions</li>
+                <li><i class="fas fa-calculator"></i> Numpy - Statistical Functions</li>
+                <li><i class="fas fa-font"></i> Numpy - String Functions</li>
+                <li><i class="fas fa-palette"></i> Plotly</li>
+                <li><i class="fas fa-palette"></i> Seaborn</li>
+                <li><i class="fas fa-sort-amount-down"></i> Sort, Search & Counting Functions</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-chart-bar"></i> Step 9: PYTHON - Statistics</h2>
+            <ul>
+                <li><i class="fas fa-percent"></i> Probability Theory: Understanding probability distributions
+                    (Bernoulli, Binomial, Normal, Poisson), Bayes' theorem, and conditional probability.</li>
+                <li><i class="fas fa-poll"></i> Descriptive Statistics: Measures of central tendency (mean, median,
+                    mode) and variability (range, variance, standard deviation).</li>
+                <li><i class="fas fa-calculator"></i> Inferential Statistics: Hypothesis testing (t-tests, ANOVA),
+                    confidence intervals, and regression analysis.</li>
+                <li><i class="fas fa-vector-square"></i> Linear Algebra: Vector operations, matrix multiplication,
+                    eigenvalues, and eigenvectors.</li>
+                <li><i class="fas fa-sigma"></i> Bayesian Statistics: Bayes' theorem, prior and posterior distributions,
+                    and Bayesian inference.</li>
+                <li><i class="fas fa-chart-line"></i> Time Series Analysis: Autocorrelation, partial autocorrelation,
+                    ARIMA models, and forecasting.</li>
+                <li><i class="fas fa-ruler-horizontal"></i> Regression Analysis: Simple and multiple linear regression,
+                    logistic regression, and regression metrics (R-squared, MSE).</li>
+                <li><i class="fas fa-vial"></i> Hypothesis Testing: Types of errors (Type I, Type II), power analysis,
+                    and common statistical tests (t-tests, ANOVA, chi-squared tests).</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 10: <i class="fas fa-robot"></i> MACHINE LEARNING - Introduction To Machine Learning & Feature
+                Engineering</h2>
+            <ul>
+                <li><i class="fas fa-info-circle"></i> Artificial Intelligence Vs Machine Learning Vs Deep Learning Vs
+                    Data Science</li>
+                <li><i class="fas fa-graduation-cap"></i> Supervised, Unsupervised, Semi-Supervised, Reinforcement
+                    Learning</li>
+                <li><i class="fas fa-clipboard-list"></i> Train, Test, Validation Split</li>
+                <li><i class="fas fa-search"></i> Performance Overfitting, Under Fitting Bias Vs Variance</li>
+                <li><i class="fas fa-wrench"></i> Handling Missing Data</li>
+                <li><i class="fas fa-exclamation-triangle"></i> Handling Imbalanced Data</li>
+                <li><i class="fas fa-arrow-up"></i> Up-Sampling Down-Sampling</li>
+                <li><i class="fas fa-sort-amount-down"></i> SMOTE Data Interpolation Handling Outliers Filter Method
+                    Wrapper Method Embedded Methods</li>
+                <li><i class="fas fa-chart-bar"></i> Feature Scaling Standardization Mean Normalization Min-Max Scaling
+                    Unit Vector</li>
+                <li><i class="fas fa-chart-pie"></i> Feature Extraction PCA (Principle Component Analysis)</li>
+                <li><i class="fas fa-code"></i> Data Encoding Nominal Encoding One Hot Encoding One Hot Encoding With
+                    Multiple Categories Mean
+                    Encoding Ordinal Encoding</li>
+                <li><i class="fas fa-sort-numeric-down"></i> Label Encoding Target Guided Ordinal Encoding Covariance
+                    Correlation Check Pearson Correlation
+                    Coefficient Spearman’s Rank Correlation</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 11: MACHINE LEARNING - Machine Learning Topics</h2>
+            <ul>
+                <li><i class="fas fa-chart-pie"></i> Exploratory Data Analysis</li>
+                <li><i class="fas fa-wrench"></i> Feature Engineering And Selection</li>
+                <li><i class="fas fa-bicycle"></i> Analyzing Bike Sharing Trends</li>
+                <li><i class="fas fa-film"></i> Analyzing Movie Reviews Sentiment</li>
+                <li><i class="fas fa-user-friends"></i> Customer Segmentation And Effective Cross Selling</li>
+                <li><i class="fas fa-wine-glass"></i> Analyzing Wine Types And Quality</li>
+                <li><i class="fas fa-headphones"></i> Analyzing Music Trends And Recommendations</li>
+                <li><i class="fas fa-chart-line"></i> Forecasting Stock And Commodity Prices</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 12: MACHINE LEARNING - Linear Regression &amp; Logistic Regression</h2>
+            <ul>
+                <li><i class="fas fa-chart-line"></i> Linear Regression</li>
+                <li><i class="fas fa-search"></i> Gradient Descent</li>
+                <li><i class="fas fa-chart-pie"></i> Multiple Linear Regression</li>
+                <li><i class="fas fa-cube"></i> Polynomial Regression</li>
+                <li><i class="fas fa-square-root-alt"></i> R Square And Adjusted R Square</li>
+                <li><i class="fas fa-list-ol"></i> RMSE, MSE, MAE Comparison</li>
+                <li><i class="fas fa-shield-alt"></i> Regularized Linear Models</li>
+                <li><i class="fas fa-columns"></i> Ridge Regression</li>
+                <li><i class="fas fa-filter"></i> Lasso Regression</li>
+                <li><i class="fas fa-balance-scale"></i> Elastic Net</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment On Cloud And UI
+                </li>
+                <li><i class="fas fa-user-secret"></i> Logistic Regression In-Depth Intuition</li>
+                <li><i class="fas fa-microscope"></i> In-Depth Mathematical Intuition</li>
+                <li><i class="fas fa-protractor"></i> In-Depth Geometrical Intuition</li>
+                <li><i class="fas fa-cog"></i> Hyperparameter Tuning</li>
+                <li><i class="fas fa-search-plus"></i> Grid Search CV</li>
+                <li><i class="fas fa-random"></i> Randomized Search CV</li>
+                <li><i class="fas fa-exclamation-triangle"></i> Data Leakage</li>
+                <li><i class="fas fa-check-square"></i> Confusion Matrix</li>
+                <li><i class="fas fa-clipboard-list"></i> Precision, Recall, F1 Score, ROC, AUC</li>
+                <li><i class="fas fa-trophy"></i> Best Metric Selection</li>
+                <li><i class="fas fa-award"></i> Multiclass Classification In Logistic Regression</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment In Multi-Cloud
+                    Platform</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-atom"></i> Step 13: MACHINE LEARNING - Feature Selection, Decision Tree &amp; SVMs</h2>
+            <ul>
+                <li><i class="fas fa-filter"></i> Feature Selection</li>
+                <li><i class="fas fa-arrow-alt-circle-right"></i> Recursive Feature Elimination</li>
+                <li><i class="fas fa-arrow-alt-circle-left"></i> Backward Elimination</li>
+                <li><i class="fas fa-arrow-alt-circle-up"></i> Forward Elimination</li>
+                <li><i class="fas fa-sitemap"></i> Decision Tree Classifier</li>
+                <li><i class="fas fa-microscope"></i> In-Depth Mathematical Intuition</li>
+                <li><i class="fas fa-protractor"></i> In-Depth Geometrical Intuition</li>
+                <li><i class="fas fa-clipboard-list"></i> Confusion Matrix</li>
+                <li><i class="fas fa-check-square"></i> Precision, Recall, F1 Score, ROC, AUC</li>
+                <li><i class="fas fa-trophy"></i> Best Metric Selection</li>
+                <li><i class="fas fa-sitemap"></i> Decision Tree Regressor</li>
+                <li><i class="fas fa-microscope"></i> In-Depth Mathematical Intuition</li>
+                <li><i class="fas fa-protractor"></i> In-Depth Geometrical Intuition</li>
+                <li><i class="fas fa-chart-line"></i> Performance Metrics</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment In Multi-Cloud
+                    Platform</li>
+                <li><i class="fas fa-shield-alt"></i> Linear SVM Classification</li>
+                <li><i class="fas fa-microscope"></i> In-Depth Mathematical Intuition</li>
+                <li><i class="fas fa-protractor"></i> In-Depth Geometrical Intuition</li>
+                <li><i class="fas fa-shield-alt"></i> Soft Margin Classification</li>
+                <li><i class="fas fa-shield-alt"></i> Nonlinear SVM Classification</li>
+                <li><i class="fas fa-cube"></i> Polynomial Kernel</li>
+                <li><i class="fas fa-cube"></i> Gaussian, RBF Kernel</li>
+                <li><i class="fas fa-exclamation-triangle"></i> Data Leakage</li>
+                <li><i class="fas fa-clipboard-list"></i> Confusion Matrix</li>
+                <li><i class="fas fa-check-square"></i> Precision, Recall, F1 Score, ROC, AUC</li>
+                <li><i class="fas fa-trophy"></i> Best Metric Selection</li>
+                <li><i class="fas fa-chart-line"></i> SVM Regression</li>
+                <li><i class="fas fa-microscope"></i> In-Depth Mathematical Intuition</li>
+                <li><i class="fas fa-protractor"></i> In-Depth Geometrical Intuition</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 14: MACHINE LEARNING - Naïve Bayes &amp; Ensemble Techniques</h2>
+            <ul>
+                <li><i class="fas fa-microscope"></i> Bayes Theorem</li>
+                <li><i class="fas fa-sitemap"></i> Multinomial Naïve Bayes</li>
+                <li><i class="fas fa-sitemap"></i> Gaussian Naïve Bayes</li>
+                <li><i class="fas fa-list-ol"></i> Various Types of Bayes Theorem and Its Intuition</li>
+                <li><i class="fas fa-clipboard-list"></i> Confusion Matrix</li>
+                <li><i class="fas fa-check-square"></i> Precision, Recall, F1 Score, ROC, AUC</li>
+                <li><i class="fas fa-trophy"></i> Best Metric Selection</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment</li>
+                <li><i class="fas fa-users"></i> Definition of Ensemble Techniques</li>
+                <li><i class="fas fa-sitemap"></i> Bagging Technique</li>
+                <li><i class="fas fa-boxes"></i> Bootstrap Aggregation</li>
+                <li><i class="fas fa-tree"></i> Random Forest (Bagging Technique)</li>
+                <li><i class="fas fa-tree"></i> Random Forest Regressor</li>
+                <li><i class="fas fa-tree"></i> Random Forest Classifier</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment</li>
+                <li><i class="fas fa-rocket"></i> Boosting Technique</li>
+                <li><i class="fas fa-rocket"></i> AdaBoost</li>
+                <li><i class="fas fa-rocket"></i> Gradient Boosting</li>
+                <li><i class="fas fa-rocket"></i> XGBoost</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 15: MACHINE LEARNING - KNN &amp; Dimensionality Reduction</h2>
+            <ul>
+                <li><i class="fas fa-user-friends"></i> KNN Classifier</li>
+                <li><i class="fas fa-user-friends"></i> KNN Regressor</li>
+                <li><i class="fas fa-code-branch"></i> Variants of KNN</li>
+                <li><i class="fas fa-code-branch"></i> Brute Force KNN</li>
+                <li><i class="fas fa-code-branch"></i> K-Dimension Tree</li>
+                <li><i class="fas fa-code-branch"></i> Ball Tree</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment</li>
+                <li><i class="fas fa-exclamation-triangle"></i> The Curse of Dimensionality</li>
+                <li><i class="fas fa-arrows-alt-v"></i> Dimensionality Reduction Technique</li>
+                <li><i class="fas fa-arrows-alt-v"></i> PCA (Principle Component Analysis)</li>
+                <li><i class="fas fa-book-open"></i> Mathematics Behind PCA</li>
+                <li><i class="fas fa-chart-pie"></i> Scree Plots</li>
+                <li><i class="fas fa-code-branch"></i> Eigen-Decomposition Approach</li>
+                <li><i class="fas fa-laptop-code"></i> Practical</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-atom"></i> Step 16: MACHINE LEARNING - Clustering</h2>
+            <ul>
+                <li><i class="fas fa-sitemap"></i> Clustering and Their Types</li>
+                <li><i class="fas fa-cube"></i> K-Means Clustering</li>
+                <li><i class="fas fa-plus-circle"></i> K-Means++</li>
+                <li><i class="fas fa-boxes"></i> Batch K-Means</li>
+                <li><i class="fas fa-tree"></i> Hierarchical Clustering</li>
+                <li><i class="fas fa-database"></i> DBSCAN</li>
+                <li><i class="fas fa-chart-pie"></i> Evaluation of Clustering</li>
+                <li><i class="fas fa-check-square"></i> Homogeneity, Completeness, and V-Measure</li>
+                <li><i class="fas fa-check-square"></i> Silhouette Coefficient</li>
+                <li><i class="fas fa-check-square"></i> Davies-Bouldin Index</li>
+                <li><i class="fas fa-clipboard-list"></i> Contingency Matrix</li>
+                <li><i class="fas fa-clipboard-list"></i> Pair Confusion Matrix</li>
+                <li><i class="fas fa-exclamation-triangle"></i> Extrinsic Measure</li>
+                <li><i class="fas fa-exclamation-triangle"></i> Intrinsic Measure</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-bell"></i> Step 17: MACHINE LEARNING - Anomaly Detection &amp; Time Series Anomaly
+                Detection</h2>
+            <ul>
+                <li><i class="fas fa-sitemap"></i> Anomaly Detection Types</li>
+                <li><i class="fas fa-industry"></i> Anomaly Detection Applications</li>
+                <li><i class="fas fa-forest"></i> Isolation Forest Anomaly Detection Algorithm</li>
+                <li><i class="fas fa-database"></i> Density-Based Anomaly Detection (Local Outlier Factor) Algorithm
+                </li>
+                <li><i class="fas fa-support"></i> Support Vector Machine Anomaly Detection Algorithm</li>
+                <li><i class="fas fa-database"></i> DBSCAN Algorithm for Anomaly Detection</li>
+                <li><i class="fas fa-cloud-upload-alt"></i> Complete End-To-End Project With Deployment</li>
+                <li><i class="fas fa-question-circle"></i> What Is a Time Series?</li>
+                <li><i class="fas fa-rocket"></i> Old Techniques</li>
+                <li><i class="fas fa-chart-line"></i> ARIMA</li>
+                <li><i class="fas fa-signal"></i> ACF and PACF</li>
+                <li><i class="fas fa-calendar-alt"></i> Time-Dependent Seasonal Components</li>
+                <li><i class="fas fa-chart-line"></i> Autoregressive (AR)</li>
+                <li><i class="fas fa-chart-line"></i> Moving Average (Ma)</li>
+                <li><i class="fas fa-chart-line"></i> Mixed Arma- Modeler</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 18: DJANGO - Django Project Structure <i class="fas fa-project-diagram"></i></h2>
+            <ul>
+                <li><i class="fas fa-folder-open"></i> Django Project Structure</li>
+                <li><i class="fas fa-balance-scale"></i> App vs Project</li>
+                <li><i class="fas fa-cubes"></i> Core App Structure</li>
+                <li><i class="fas fa-file-code"></i> Settings.py File</li>
+                <li><i class="fas fa-file-code"></i> Urls.py File</li>
+                <li><i class="fas fa-file-code"></i> Views.py File</li>
+                <li><i class="fas fa-box-open"></i> Templates Folder</li>
+                <li><i class="fas fa-box-open"></i> Static Folder</li>
+                <li><i class="fas fa-box-open"></i> Migrations Folder</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 19: DJANGO - Django Models and Database <i class="fas fa-database"></i></h2>
+            <ul>
+                <li><i class="fas fa-database"></i> Django Models</li>
+                <li><i class="fas fa-list"></i> Field Types</li>
+                <li><i class="fas fa-bookmark"></i> Model Meta</li>
+                <li><i class="fas fa-cog"></i> Model Methods</li>
+                <li><i class="fas fa-infinity"></i> Model Inheritance</li>
+                <li><i class="fas fa-database"></i> Database Schema</li>
+                <li><i class="fas fa-database"></i> Database Backends</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Step 20: DJANGO - Django Views and URLs</h2>
+            <ul>
+                <li><i class="fas fa-eye"></i> Django Views</li>
+                <li><i class="fas fa-code"></i> Function-Based Views</li>
+                <li><i class="fas fa-cube"></i> Class-Based Views</li>
+                <li><i class="fas fa-cubes"></i> Generic Views</li>
+                <li><i class="fas fa-link"></i> Django URLs</li>
+                <li><i class="fas fa-ship"></i> URL Dispatcher</li>
+                <li><i class="fas fa-route"></i> URL Resolvers</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-rocket"></i> Step 21: PROJECTS</h2>
+            <ul>
+                <li><i class="fas fa-cog"></i> Moving forward, we will continue to build on projects if time permits.
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Veron Institute Python Roadmap</p>
+        <p>Made with ❤️ by Parthav</p>
+    </footer>
+</body>
+
+</html>
