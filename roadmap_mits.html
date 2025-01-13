@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"
+        href="https://mitssolution.com/wp-content/uploads/2024/02/MITS-Logo-website.jpg" />
+    <title>Full Stack Web Development Roadmap</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: linear-gradient(to right, #005094, #ff0000);
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: #004080;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 0.2;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        header h1:hover {
+            transform: scale(1.1);
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            object-fit: fill;
+            border-radius: 50%;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        header img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .roadmap-container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .step {
+            border-left: 5px solid #d92518;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+
+        .step h2 {
+            color: #d92518;
+            transition: color 0.3s ease;
+        }
+
+        .step:hover h2 {
+            color: #a71d1d;
+        }
+
+        .step ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .step ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .step ul li:hover {
+            transform: translateY(-2px);
+            background: #e9e9e9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://mitssolution.com/wp-content/uploads/2024/02/MITS-Logo-website.jpg"
+            alt="MIST Logo">
+        <h1>MITS Solutions</h1>
+        <h1>Web Development Roadmap</h1>
+    </header>
+
+    <div class="roadmap-container">
+        <div class="step">
+            <h2><i class="fas fa-code"></i> Step 1: Learning HTML</h2>
+            <p>Duration: 7 Days</p>
+            <p>Objective: Gain a solid foundation in HTML and understand its practical applications for creating web
+                pages.</p>
+            <ul>
+                <li>
+                    <strong>Day 1: Introduction to HTML Basics</strong>
+                    <ol>
+                        <li>What is HTML? Definition, Importance, and Role in Web Development</li>
+                        <li>Setting Up the Environment: Text Editors (VS Code, Sublime Text), Browsers (Chrome, Firefox,
+                            Edge)</li>
+                        <li>Basic HTML Structure: &lt;!DOCTYPE&gt; Declaration, HTML Document Anatomy: &lt;html&gt;,
+                            &lt;head&gt;, &lt;body&gt;</li>
+                        <li>Basic Tags: &lt;h1&gt; to &lt;h6&gt; (Headings), &lt;p&gt; (Paragraph), &lt;br&gt; (Line
+                            Break), &lt;hr&gt; (Horizontal Rule)</li>
+                        <li>Practice Task: Create a simple web page with a heading, a paragraph, and line breaks.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Text Formatting and Semantic Tags</strong>
+                    <ol>
+                        <li>Text Formatting Tags: Bold (&lt;b&gt;), Strong (&lt;strong&gt;), Italics (&lt;i&gt;),
+                            Emphasized (&lt;em&gt;), Superscript (&lt;sup&gt;), Subscript (&lt;sub&gt;)</li>
+                        <li>Semantic Elements: &lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;,
+                            &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;</li>
+                        <li>Practice Task: Create a web page with a properly structured layout using semantic tags.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Links, Lists, and Images</strong>
+                    <ol>
+                        <li>Hyperlinks: Anchor Tag (&lt;a&gt;), Absolute vs. Relative URLs, Target Attribute: _blank,
+                            _self</li>
+                        <li>Lists: Ordered Lists (&lt;ol&gt;), Unordered Lists (&lt;ul&gt;), Nested Lists</li>
+                        <li>Images: Adding Images (&lt;img&gt;), Attributes: src, alt, height, width</li>
+                        <li>Practice Task: Create a webpage with links, images, and both ordered and unordered lists.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Tables and Forms (Part 1)</strong>
+                    <ol>
+                        <li>Tables: Table Structure (&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;), Table
+                            Attributes: border, cellpadding, cellspacing, Spanning Rows and Columns: rowspan, colspan
+                        </li>
+                        <li>Forms (Part 1): Basic Structure (&lt;form&gt;), Input Types: text, password, email</li>
+                        <li>Practice Task: Create a web page with a table and a basic form with text inputs.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 5: Forms (Part 2)</strong>
+                    <ol>
+                        <li>Advanced Form Elements: Radio Buttons (&lt;input type="radio"&gt;), Checkboxes (&lt;input
+                            type="checkbox"&gt;), Dropdowns (&lt;select&gt;, &lt;option&gt;), Textareas
+                            (&lt;textarea&gt;)</li>
+                        <li>Form Attributes: Action and Method Attributes, Required Fields, Placeholder, and Labels</li>
+                        <li>Practice Task: Create a form with all the advanced form elements and relevant attributes.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 6: Multimedia and Embedding</strong>
+                    <ol>
+                        <li>Audio and Video: Adding Audio (&lt;audio&gt; with controls), Adding Video (&lt;video&gt;
+                            with controls)</li>
+                        <li>Embedding Content: &lt;iframe&gt; for Embedding Maps, Videos (YouTube)</li>
+                        <li>Practice Task: Create a web page embedding a YouTube video and adding audio/video content.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 7: Meta Tags and Best Practices </strong>
+                    <ol>
+                        <li>Meta Tags: Character Encoding (&lt;meta charset="UTF-8"&gt;), Viewport Settings (&lt;meta
+                            name="viewport"&gt;), SEO Meta Tags: description, keywords</li>
+                        <li>HTML Best Practices: Indentation and Commenting (&lt;!-- Comment --&gt;), Avoid Deprecated
+                            Tags, Accessibility (Using alt, aria-label)</li>
+                        <li>Practice Task: Create a complete web page implementing all learned concepts.</li>
+                    </ol>
+                </li>
+                </ol>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-paint-brush"></i> Step 2: Learning CSS</h2>
+            <p>Duration: 7 Days</p>
+            <p>Objective: Master the basics of CSS to style web pages and build visually appealing designs.</p>
+            <ul>
+                <li>
+                    <strong>Day 1: Introduction to CSS and Basic Selectors</strong>
+                    <ol>
+                        <li>What is CSS? Role and Importance of CSS in Web Development</li>
+                        <li>CSS Syntax: Selectors, Properties, Values</li>
+                        <li>Ways to Add CSS:
+                            <ul>
+                                <li>Inline CSS</li>
+                                <li>Internal CSS</li>
+                                <li>External CSS</li>
+                            </ul>
+                        </li>
+                        <li>Basic Selectors:
+                            <ul>
+                                <li>Universal Selector (&lt;* &gt;)</li>
+                                <li>Type Selector (&lt;p&gt;, &lt;h1&gt;)</li>
+                                <li>Class Selector (&lt;.classname&gt;)</li>
+                                <li>ID Selector (&lt;#idname&gt;)</li>
+                            </ul>
+                        </li>
+                        <li>Practice Task: Create a simple HTML page and style it using all three CSS methods.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Colors, Backgrounds, and Borders</strong>
+                    <ol>
+                        <li>Colors: Color Formats: Name, Hex, RGB, RGBA, HSL</li>
+                        <li>Text Color (&lt;color&gt;)</li>
+                        <li>Backgrounds:
+                            <ul>
+                                <li>Background Color (&lt;background-color&gt;)</li>
+                                <li>Background Images (&lt;background-image&gt;, repeat, position)</li>
+                            </ul>
+                        </li>
+                        <li>Borders: Border Properties: &lt;border&gt;, &lt;border-width&gt;, &lt;border-radius&gt;</li>
+                        <li>Practice Task: Create a styled card with different background colors, images, and borders.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Text and Font Styling</strong>
+                    <ol>
+                        <li>Text Styling: &lt;font-size&gt;, &lt;font-family&gt;, &lt;font-style&gt;,
+                            &lt;font-weight&gt;</li>
+                        <li>Text Alignment (&lt;text-align&gt;)</li>
+                        <li>Text Decorations (&lt;text-decoration&gt;)</li>
+                        <li>Google Fonts Integration: Using External Font Resources</li>
+                        <li>Practice Task: Create a webpage with styled headings, paragraphs, and Google Fonts.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Box Model and Layout Basics</strong>
+                    <ol>
+                        <li>Box Model: Padding, Border, Margin, Content</li>
+                        <li>Visualizing the Box Model with Developer Tools</li>
+                        <li>Width and Height: Fixed, Percentage, Auto</li>
+                        <li>Overflow: &lt;overflow: hidden;&gt;, &lt;scroll;&gt;, &lt;auto;&gt;</li>
+                        <li>Practice Task: Create a styled container using box model properties.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 5: Positioning and Flexbox</strong>
+                    <ol>
+                        <li>Positioning: Static, Relative, Absolute, Fixed</li>
+                        <li>Z-Index and Stacking Order</li>
+                        <li>Introduction to Flexbox: &lt;display: flex;&gt;</li>
+                        <li>Aligning Items: &lt;justify-content&gt;, &lt;align-items&gt;</li>
+                        <li>Flex Direction: &lt;flex-direction&gt;</li>
+                        <li>Practice Task: Create a webpage layout using Flexbox for header, main content, and footer.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 6: Grid and Responsive Design</strong>
+                    <ol>
+                        <li>Introduction to Grid: &lt;display: grid;&gt;</li>
+                        <li>Defining Rows and Columns: &lt;grid-template-rows&gt;, &lt;grid-template-columns&gt;</li>
+                        <li>Grid Gap: &lt;gap&gt;, &lt;row-gap&gt;, &lt;column-gap&gt;</li>
+                        <li>Media Queries for Responsive Design: Basic Syntax, Breakpoints for Mobile, Tablet, and
+                            Desktop</li>
+                        <li>Practice Task: Create a responsive grid layout for a photo gallery.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 7: Transitions, Animations, and Best Practices</strong>
+                    <ol>
+                        <li>Transitions: &lt;transition-property&gt;, &lt;transition-duration&gt;,
+                            &lt;transition-timing-function&gt;</li>
+                        <li>Keyframe Animations: &lt;@keyframes&gt;, &lt;animation-name&gt;, &lt;animation-duration&gt;
+                        </li>
+                        <li>Practical Animation Examples</li>
+                        <li>CSS Best Practices: Code Organization (External CSS Files), Naming Conventions (BEM
+                            Methodology), Avoiding Inline Styles</li>
+                        <li>Practice Task: Create a webpage with hover effects, transitions, and animations.</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-code"></i> Step 3: Learning JavaScript</h2>
+            <p>Duration: 14 Days</p>
+            <p>Objective: Gain a strong foundation in JavaScript to add interactivity and functionality to web pages.
+            </p>
+
+            <h3>Week 1: JavaScript Basics</h3>
+            <ul>
+                <li>
+                    <strong>Day 1: Introduction to JavaScript</strong>
+                    <ol>
+                        <li>What is JavaScript? Purpose and Importance</li>
+                        <li>How JavaScript works in the browser</li>
+                        <li>Adding JavaScript to a Web Page: Inline, Internal, and External JS</li>
+                        <li>Console Basics: Using &lt;console.log()&gt; for debugging</li>
+                        <li>Practice Task: Create an HTML page and write a simple JS script to print a welcome message
+                            in the console.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Variables, Constants, and Data Types</strong>
+                    <ol>
+                        <li>Variables in JavaScript: var, let, and const</li>
+                        <li>Data Types: String, Number, Boolean, Null, Undefined, Symbol</li>
+                        <li>Type Checking: Using &lt;typeof&gt;</li>
+                        <li>Practice Task: Write a script that demonstrates variable declarations and type checking.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Operators and Expressions</strong>
+                    <ol>
+                        <li>Arithmetic Operators: +, -, *, /, %</li>
+                        <li>Comparison Operators: ==, ===, !=, &lt;, &gt;</li>
+                        <li>Logical Operators: &&, ||, !</li>
+                        <li>Practice Task: Write a script that calculates the area of a rectangle and checks whether the
+                            rectangle is square.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Control Structures: If/Else and Switch</strong>
+                    <ol>
+                        <li>Conditional Statements: if, else if, else</li>
+                        <li>Switch Case Statements: Syntax and Use Cases</li>
+                        <li>Practice Task: Write a script that determines the grade of a student based on their marks
+                            using if/else and switch.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 5: Loops and Iteration</strong>
+                    <ol>
+                        <li>Loops in JavaScript: for, while, do...while</li>
+                        <li>Breaking and Continuing Loops</li>
+                        <li>Practice Task: Write a script that calculates the sum of even numbers between 1 and 100.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 6: Functions</strong>
+                    <ol>
+                        <li>Function Basics: Declaration, Invocation, Parameters, and Return Values</li>
+                        <li>Function Expressions and Arrow Functions</li>
+                        <li>Practice Task: Write a function to check if a number is prime.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 7: Arrays</strong>
+                    <ol>
+                        <li>Introduction to Arrays: Declaring and Accessing Elements</li>
+                        <li>Array Methods: push(), pop(), shift(), unshift(), slice(), splice()</li>
+                        <li>Iterating Over Arrays: for, for...of</li>
+                        <li>Practice Task: Write a script to find the largest and smallest numbers in an array.</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <h3>Week 2: Advanced JavaScript</h3>
+            <ul>
+                <li>
+                    <strong>Day 8: Objects and JSON</strong>
+                    <ol>
+                        <li>Objects in JavaScript: Properties and Methods</li>
+                        <li>Accessing and Updating Properties</li>
+                        <li>JSON: Syntax and Usage</li>
+                        <li>Converting Between Objects and JSON: &lt;JSON.stringify()&gt;, &lt;JSON.parse()&gt;</li>
+                        <li>Practice Task: Create an object for a student and manipulate its properties.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 9: DOM Manipulation (Part 1)</strong>
+                    <ol>
+                        <li> Document Object Model (DOM) Basics</li>
+                        <li>Selecting Elements: &lt;getElementById&gt;, &lt;querySelector&gt;</li>
+                        <li>Modifying Elements: Changing Text, HTML, and Styles</li>
+                        <li>Practice Task: Create a button that changes the text of a paragraph when clicked.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 10: DOM Manipulation (Part 2)</strong>
+                    <ol>
+                        <li>Adding and Removing Elements: &lt;createElement()&gt;, &lt;appendChild()&gt;,
+                            &lt;removeChild()&gt;</li>
+                        <li>Event Listeners: &lt;addEventListener&gt; for handling events</li>
+                        <li>Practice Task: Create a to-do list where users can add and remove tasks dynamically.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 11: Working with Forms and Events</strong>
+                    <ol>
+                        <li>Form Events: submit, change, focus, blur</li>
+                        <li>Form Validation: Checking Input Fields (Required Fields, Length)</li>
+                        <li>Practice Task: Create a form that validates user input before submission.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 12: Introduction to ES6 Features</strong>
+                    <ol>
+                        <li>Template Literals</li>
+                        <li>Destructuring Arrays and Objects</li>
+                        <li>Spread and Rest Operators</li>
+                        <li>Practice Task: Use ES6 features to simplify a script that processes an array of user data.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 13: Promises and Async/Await</strong>
+                    <ol>
+                        <li>Introduction to Promises</li>
+                        <li>then(), catch()</li>
+                        <li>Async/Await Syntax</li>
+                        <li>Practice Task: Write a script to fetch data from a fake API (use fetch with async/await).
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 14: Building a Mini Project</strong>
+                    <ol>
+                        <li>Project: Create a dynamic weather app using HTML, CSS, and JavaScript.</li>
+                        <li>Features:
+                            <ul>
+                                <li>Input field for the city name</li>
+                                <li>Fetch weather data using an API (e.g., OpenWeatherMap API)</li>
+                                <li>Display the temperature, weather condition, and an appropriate icon</li>
+                            </ul>
+                        </li>
+                        <li>Skills Consolidated:
+                            <ul>
+                                <li>DOM Manipulation</li>
+                                <li>Event Handling</li>
+                                <li>API Integration</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-paint-brush"></i> Step 4: Learning Bootstrap and Tailwind CSS</h2>
+
+            <h3>Week 1: Bootstrap</h3>
+            <ul>
+                <li>
+                    <strong>Day 1: Introduction to Bootstrap</strong>
+                    <ol>
+                        <li>What is Bootstrap and its advantages?</li>
+                        <li>Setting up Bootstrap (via CDN and npm).</li>
+                        <li>Overview of Bootstrap documentation.</li>
+                        <li>Introduction to the grid system: rows, columns, and containers.</li>
+                        <li>Hands-on: Create a basic layout using the grid.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Typography and Utilities</strong>
+                    <ol>
+                        <li>Understanding typography utilities (headings, paragraphs, text alignment).</li>
+                        <li>Colors and background utilities.</li>
+                        <li>Spacing utilities (padding, margins).</li>
+                        <li>Hands-on: Design a simple page focusing on typography and utilities.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Components – Buttons and Forms</strong>
+                    <ol>
+                        <li>Creating and customizing buttons.</li>
+                        <li>Working with forms: inputs, checkboxes, radio buttons, and validations.</li>
+                        <li>Hands-on: Build a registration form using Bootstrap.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Components – Navbar and Navigation</strong>
+                    <ol>
+                        <li>Designing responsive navbars and navigation menus.</li>
+                        <li>Dropdowns, breadcrumbs, and pagination.</li>
+                        <li>Hands-on: Create a website header with navigation.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 5: Components – Cards and Modals</strong>
+                    <ol>
+                        <li>Using cards to display content.</li>
+                        <li>Adding modals for interactive pop-ups.</li>
+                        <li>Hands-on: Create a product card with a modal popup.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 6: Layout and Utilities</strong>
+                    <ol>
+                        <li>Advanced grid system features (offsets, ordering, nested rows).</li>
+                        <li>Utilities for flexbox and alignment.</li>
+                        <li>Hands-on: Create a responsive homepage layout.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 7: Bootstrap Project</strong>
+                    <ol>
+                        <li>Build a small project (e.g., a portfolio site or landing page) incorporating what you've
+                            learned.</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <h3>Week 2: Tailwind CSS</h3>
+            <ul>
+                <li>
+                    <strong>Day 8: Introduction to Tailwind CSS</strong>
+                    <ol>
+                        <li>What is Tailwind CSS, and why use it?</li>
+                        <li>Setting up Tailwind (via CDN or npm).</li>
+                        <li>Overview of utility-first approach and documentation.</li>
+                        <li>Basic utilities: colors, spacing, borders, and shadows.</li>
+                        <li>Hands-on: Create a basic layout using Tailwind.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 9: Typography and Responsive Design</strong>
+                    <ol>
+                        <li>Typography utilities: font sizes, weights, line heights, and letter spacing.</li>
+                        <li>Responsive design principles in Tailwind.</li>
+                        <li>Hands-on: Build a responsive page focusing on text content.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 10: Flexbox and Grid Utilities</strong>
+                    <ol>
+                        <li>Understanding and using Tailwind’s flexbox utilities.</li>
+                        <li>Grid layout system in Tailwind.</li>
+                        <li>Hands-on: Create a responsive layout using flexbox and grid.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 11: Components with Tailwind CSS</strong>
+                    <ol>
+                        <li>Building buttons, cards, and forms with Tailwind.</li>
+                        <li>Adding interactivity with hover, focus, and active states </li>
+                        <li>Hands-on: Design a user profile card and a registration form.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 12: Tailwind Customization</strong>
+                    <ol>
+                        <li>Extending and customizing Tailwind’s theme.</li>
+                        <li>Using the Tailwind config file for colors, fonts, and spacing.</li>
+                        <li>Hands-on: Create a custom theme for a simple webpage.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 13: Advanced Tailwind Features</strong>
+                    <ol>
+                        <li>Working with pseudo-classes and variants.</li>
+                        <li>Using plugins for advanced functionality.</li>
+                        <li>Hands-on: Add animations and transitions to a webpage.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 14: Tailwind Project</strong>
+                    <ol>
+                        <li>Build a project (e.g., a blog homepage or a dashboard UI).</li>
+                        <li>Use customizations and responsive utilities to enhance the design.</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-code"></i> Step 5: Learning React</h2>
+
+            <h3>Week 1: React Basics</h3>
+            <ul>
+                <li>
+                    <strong>Day 1: Introduction to React</strong>
+                    <ol>
+                        <li>What is React and why use it?</li>
+                        <li>Understanding SPA (Single Page Applications).</li>
+                        <li>Setting up the React environment using Create React App (CRA) or Vite.</li>
+                        <li>Introduction to JSX (JavaScript XML).</li>
+                        <li>Writing your first React component.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Components and Props</strong>
+                    <ol>
+                        <li>Understanding functional components.</li>
+                        <li>What are props, and how to pass data to components?</li>
+                        <li>Props destructuring and default props.</li>
+                        <li>Component hierarchy and composition.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: State Management with useState</strong>
+                    <ol>
+                        <li>Introduction to state in React.</li>
+                        <li>Using the useState hook.</li>
+                        <li>Modifying and managing state.</li>
+                        <li>Difference between props and state.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Handling Events in React</strong>
+                    <ol>
+                        <li>Event handling in React (onClick, onChange, etc.).</li>
+                        <li>Passing parameters to event handlers.</li>
+                        <li>Conditional rendering (if-else, ternary operators).</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 5: Lists and Keys</strong>
+                    <ol>
+                        <li>Rendering lists in React using map().</li>
+                        <li>Importance of keys and how to use them.</li>
+                        <li>Nested lists and dynamic data rendering.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 6: Controlled Components and Forms</strong>
+                    <ol>
+                        <li>Building forms in React.</li>
+                        <li>Controlled vs. uncontrolled components.</li>
+                        <li>Managing form data using state.</li>
+                        <li>Form validation basics.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 7: React Developer Tools and Debugging</strong>
+                    <ol>
+                        <li>Installing and using React Developer Tools.</li>
+                        <li>Debugging common issues in React.</li>
+                        <li>Optimizing the development workflow.</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <h3>Week 2: Intermediate React</h3>
+            <ul>
+                <li>
+                    <strong>Day 8: useEffect Hook</strong>
+                    <ol>
+                        <li>Introduction to the useEffect hook.</li>
+                        <li>Fetching data with useEffect.</li>
+                        <li>Cleaning up effects to avoid memory leaks.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 9: React Router Basics</strong>
+                    <ol>
+                        <li>Setting up React Router.</li>
+                        <li>Creating routes with BrowserRouter and Route.</li>
+                        <li>Navigating between pages with Link and NavLink.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 10: Dynamic Routing</strong>
+                    <ol>
+                        <li>Using URL parameters and query strings.</li>
+                        <li>Nested routes and layout components.</li>
+                        <li>Redirects and 404 pages.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 11: Context API</strong>
+                    <ol>
+                        <li>Introduction to React Context API.</li>
+                        <li>Sharing global state across components.</li>
+                        <li>Context Provider and Consumer pattern.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 12: Forms with React Hook Form</strong>
+                    <ol>
+                        <li>Introduction to React Hook Form for managing forms.</li>
+                        <li>Validation with React Hook Form.</li>
+                        <li>Handling dynamic forms.</li>
+                    </ol>
+                </li>
+                <li>
+                    < strong>Day 13: Refs and DOM Manipulation</strong>
+                        <ol>
+                            <li>Using useRef for accessing DOM elements.</li>
+                            <li>Managing focus and animations.</li>
+                            <li>Persisting values with useRef.</li>
+                        </ol>
+                </li>
+                <li>
+                    <strong>Day 14: Prop Drilling and Composition</strong>
+                    <ol>
+                        <li>Handling deeply nested props (prop drilling).</li>
+                        <li>Lifting state up to parent components.</li>
+                        <li>Advanced component composition patterns.</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <h3>Week 3: Advanced React and Ecosystem</h3>
+            <ul>
+                <li>
+                    <strong>Day 15: Performance Optimization</strong>
+                    <ol>
+                        <li>Understanding React's rendering process.</li>
+                        <li>Memoization with React.memo and useCallback.</li>
+                        <li>Lazy loading components with React.lazy and Suspense.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 16: Advanced State Management</strong>
+                    <ol>
+                        <li>State management with Redux Toolkit.</li>
+                        <li>Setting up the Redux store.</li>
+                        <li>Connecting React components with Redux.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 17: Fetching Data with Axios and RTK Query</strong>
+                    <ol>
+                        <li>Fetching and posting data with Axios.</li>
+                        <li>Introduction to RTK Query for managing API calls.</li>
+                        <li>Optimistic updates and caching with RTK Query.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 18: Error Boundaries</strong>
+                    <ol>
+                        <li>Handling errors in React applications.</li>
+                        <li>Creating and using Error Boundaries.</li>
+                        <li>Displaying fallback UI for errors.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 19: React Animations</strong>
+                    <ol>
+                        <li>Introduction to animations in React.</li>
+                        <li>Using libraries like Framer Motion and React Transition Group.</li>
+                        <li>Creating smooth transitions and animations.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 20: Testing in React</strong>
+                    <ol>
+                        <li>Setting up Jest and React Testing Library.</li>
+                        <li>Writing unit tests for components.</li>
+                        <li>Snapshot testing and mocking API calls.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 21: Deployment and Project Wrap-Up</strong>
+                    <ol>
+                        <li>Preparing the app for production (build and minify).</li>
+                        <li>Deploying to services like Vercel, Netlify, or GitHub Pages.</li>
+                        <li>Reviewing the React journey and next steps (e.g., Next.js, React Native).</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-code-branch"></i> Step 6: Learning Git</h2>
+
+            <h3>Git Basics</h3>
+            <ul>
+                <li>
+                    <strong>Day 1: Introduction to Git and Basic Commands</strong>
+                    <ol>
+                        <li>What is Git and Why Use It?
+                            <ul>
+                                <li>Understanding version control and the role of Git.</li>
+                                <li>Git vs. other version control systems.</li>
+                            </ul>
+                        </li>
+                        <li>Setting Up Git
+                            <ul>
+                                <li>Installing Git on your machine.</li>
+                                <li>Configuring Git with your name and email using &lt;git config&gt;.</li>
+                            </ul>
+                        </li>
+                        <li>Git Basics
+                            <ul>
+                                <li>Initializing a Git repository with &lt;git init&gt;.</li>
+                                <li>Understanding the working directory, staging area, and repository.</li>
+                                <li>Tracking changes with &lt;git add&gt; and &lt;git commit&gt;.</li>
+                                <li>Viewing the status with &lt;git status&gt;.</li>
+                                <li>Viewing commit history using &lt;git log&gt;.</li>
+                            </ul>
+                        </li>
+                        <li>Exercise
+                            <ul>
+                                <li>Create a simple project and practice committing changes.</li>
+                                <li>Learn how to check the status, stage files, and commit changes.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Branching, Merging, and Remote Repositories (GitHub)</strong>
+                    <ol>
+                        <li>Branching in Git
+                            <ul>
+                                <li>Creating and switching between branches with &lt;git branch&gt; and &lt;git
+                                    checkout&gt;.</li>
+                                <li>Understanding why branching is useful in Git workflows.</li>
+                                <li>Merging branches using &lt;git merge&gt;.</li>
+                            </ul>
+                        </li>
+                        <li>Working with Remote Repositories
+                            <ul>
+                                <li>Setting up a GitHub account.</li>
+                                <li>Cloning repositories from GitHub using &lt;git clone&gt;.</li>
+                                <li>Pushing and pulling changes with &lt;git push&gt; and &lt;git pull&gt;.</li>
+                            </ul>
+                        </li>
+                        <li>Resolving Merge Conflicts
+                            <ul>
+                                <li>How merge conflicts occur.</li>
+                                <li>Steps to resolve conflicts manually and using Git tools.</li>
+                            </ul>
+                        </li>
+                        <li>Exercise
+                            <ul>
+                                <li>Create a feature branch, commit changes, and merge back into the main branch.</li>
+                                <li>Push your changes to GitHub and pull the latest updates.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Collaborative Workflows and Advanced Git Commands</strong>
+                    <ol>
+                        <li>Collaborative Workflow
+                            <ul>
+                                <li>Forking a repository on GitHub and cloning it to your local machine.</li>
+                                <li>Creating Pull Requests (PRs) on GitHub.</li>
+                                <li>Reviewing and merging PRs.</li>
+                            </ul>
+                        </li>
+                        <li>Advanced Git Commands
+                            <ul>
+                                <li>Rebasing with &lt;git rebase&gt;.</li>
+                                <li>Cherry-picking commits with &lt;git cherry-pick&gt;.</li>
+                                <li>Resetting and reverting changes using &lt;git reset&gt; and &lt;git revert&gt;.</li>
+                            </ul>
+                        </li>
+                        <li>Best Practices and Git Configurations
+                            <ul>
+                                <li>Setting up &lt;.gitignore&gt; files.</li>
+                                <li>Writing clear commit messages.</li>
+                                <li>Git aliases and configurations for efficiency.</li>
+                            </ul>
+                        </li>
+                        <li>Exercise
+                            <ul>
+                                <li>Fork a project, make changes, and submit a PR.</li>
+                                <li>Practice using rebase and cherry-pick on a project.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-python"></i> Step 7: Advanced Python Concepts</h2>
+
+            <h3>Week 1: Python Basics and Data Types</h3>
+            <ul>
+                <li>
+                    <strong>Day 1: Python Basics and Data Types</strong>
+                    <ol>
+                        <li>Introduction to Python and Comparison with Other Languages</li>
+                        <li>Python syntax, indentation, and structure</li>
+                        <li>Basic building blocks: numbers, booleans, strings</li>
+                        <li>Operators and Control Flow
+                            <ul>
+                                <li>Arithmetic, bitwise, comparison, and assignment operators</li>
+                                <li>Operator precedence</li>
+                                <li>Conditions (if, else, elif) and loops (while, for)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Data Structures - Lists, Tuples, Sets, and Dictionaries</strong>
+                    <ol>
+                        <li>Working with Lists
+                            <ul>
+                                <li>List creation, modification, and methods (append, pop, etc.)</li>
+                                <li>Lists as stacks and queues</li>
+                            </ul>
+                        </li>
+                        <li>Tuples, Sets, and Dictionaries
+                            <ul>
+                                <li>Understanding tuples and immutability</li>
+                                <li>Set operations (union, intersection, difference)</li>
+                                <li>Dictionary creation, access, and dictionary methods</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Advanced Data Structures and List Comprehensions</strong>
+                    <ol>
+                        <li>List Comprehensions
+                            <ul>
+                                <li>Basic and conditional list comprehensions</li>
+                            </ul>
+                        </li>
+                        <li>Dictionary Comprehensions and View Objects
+                            <ul>
+                                <li>Dictionary comprehensions</li>
+                                <li>Dictionary view objects (keys, values, items)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Functions and Functional Programming</strong>
+                    <ol>
+                        <li>Basic Functions and Scope
+                            <ul>
+                                <li>Function definition, calling, return values, arguments (positional, keyword,
+                                    default)</li>
+                            </ul>
+                        </li>
+                        <li>Iterators, Generators, and Lambda Functions
+                            <ul>
+                                <li>Iterators and generators (yield)</li>
+                                <li>Lambda functions and their use cases</li>
+                            </ul>
+                        </li>
+                        <li>Functional Programming Techniques
+                            <ul>
+                                <li>Using map(), reduce(), filter()</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 5: Object-Oriented Programming (OOP)</strong>
+                    <ol>
+                        <li>OOP Concepts
+                            <ul>
+                                <li>Creating classes and objects</li>
+                                <li>Understanding inheritance, polymorphism, encapsulation, and abstraction</li>
+                            </ul>
+                        </li>
+                        <li>Magic Methods and Property Decorators
+                            <ul>
+                                <li>Special (magic/dunder) methods</li>
+                                <li>Property decorators (getters, setters)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 6: File Handling and Exception Handling</strong>
+                    <ol>
+                        <li>Working with Files
+                            <ul>
+                                <li>Reading, writing, and closing files</li>
+                                <li>Buffered reading and writing</li>
+                            </ul>
+                        </li>
+                        <li>Exception Handling
+                            <ul>
+                                <li>Using try-except for error handling</li>
+                                <li>Creating custom exceptions</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 7: Multithreading, Multiprocessing, and Memory Management</strong>
+                    <ol>
+                        <li>Multithreading and Multiprocessing
+                            <ul>
+                                <li>Introduction to threading and multiprocessing</li>
+                            </ul>
+                        </li>
+                        <li>Memory Management
+                            <ul>
+                                <li>Basic memory management in Python</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-database"></i> Step 8: Learning SQL</h2>
+            
+            <h3>Week 1: SQL Basics and Database Structure</h3>
+            <ul>
+                <li>
+                    <strong>Day 1: SQL Basics and Database Structure</strong>
+                    <ol>
+                        <li>Introduction to SQL: What is SQL and why it's important.</li>
+                        <li>Database Fundamentals: Tables, rows, and columns.</li>
+                        <li>Data Types: Integer, float, varchar, date, etc.</li>
+                        <li>Creating Databases and Tables:
+                            <ul>
+                                <li>&lt;CREATE DATABASE&gt;, &lt;CREATE TABLE&gt;.</li>
+                            </ul>
+                        </li>
+                        <li>Inserting Data:
+                            <ul>
+                                <li>&lt;INSERT INTO&gt;, inserting multiple records.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Basic Queries</strong>
+                    <ol>
+                        <li>&lt;SELECT&gt; Statement: Retrieving data from tables.</li>
+                        <li>&lt;WHERE&gt; Clause: Filtering data based on conditions.</li>
+                        <li>Sorting Data:
+                            <ul>
+                                <li>&lt;ORDER BY&gt;, &lt;ASC&gt;, &lt;DESC&gt;.</li>
+                            </ul>
+                        </li>
+                        <li>&lt;LIMIT&gt; Clause: Limiting the number of records returned.</li>
+                        <li>&lt;DISTINCT&gt;: Removing duplicates in query results.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Advanced Queries</strong>
+                    <ol>
+                        <li>JOINs:
+                            <ul>
+                                <li>INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.</li>
+                            </ul>
+                        </li>
+                        <li>Aggregate Functions:
+                            <ul>
+                                <li>COUNT(), SUM(), AVG(), MIN(), MAX().</li>
+                            </ul>
+                        </li>
+                        <li>&lt;GROUP BY&gt; Clause: Grouping data based on column values.</li>
+                        <li>&lt;HAVING&gt; Clause: Filtering results after aggregation.</li>
+                        <li>Subqueries: Writing queries within other queries.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Advanced SQL Topics</strong>
+                    <ol>
+                        <li>Subqueries (continued): Nested queries in &lt;WHERE&gt;, &lt;FROM&gt;, and &lt;SELECT&gt;.</li>
+                        <li>UNION and UNION ALL: Combining multiple result sets.</li>
+                        <li>Indexes: Understanding how indexing works to speed up queries.</li>
+                        <li>Normalization: First, Second, and Third Normal Form (1NF, 2NF, 3NF).</li>
+                        <li>Transactions:
+                            <ul>
+                                <li>COMMIT, ROLLBACK, and SAVEPOINT.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-code"></i> Step 9: Learning Django</h2>
+            
+            <h3>Introduction to Django & Setup</h3>
+            <ul>
+                <li>
+                    <strong>Day 1: Introduction to Django & Setup</strong>
+                    <ol>
+                        <li>What is Django?: Understanding Django’s architecture, benefits, and use cases.</li>
+                        <li>Installing Django: Setting up Python, virtual environments, and Django.</li>
+                        <li>Creating Your First Project: Initializing a new Django project and app.</li>
+                        <li>Understanding the Project Structure: Breakdown of key Django files and folders.</li>
+                        <li>Running the Development Server: Using the development server and debugging common issues.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Django Models and Database</strong>
+                    <ol>
+                        <li>What are Models?: Introduction to Django models and ORM.</li>
+                        <li>Creating Models: How to define models in &lt;models.py&gt; for database tables.</li>
+                        <li>Migrations: Understanding the migration process with &lt;makemigrations&gt; and &lt;migrate&gt;.</li>
+                        <li>Admin Interface Setup: Registering models in the admin interface for easy data management.</li>
+                        <li>Model Queries: Introduction to basic querying with the ORM (filter, exclude, get).</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Django Views and URL Routing</strong>
+                    <ol>
+                        <li>Views Overview: Understanding function-based views (FBVs).</li>
+                        <li>Creating Views: Writing basic views to return HTML responses.</li>
+                        <li>URL Routing: Configuring &lt;urls.py&gt; to map URLs to views.</li>
+                        <li>Template Rendering: Rendering HTML templates using the &lt;render()&gt; function.</li>
+                        <li>URL Parameters: Passing dynamic data through URLs and views.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Django Templates and Template Language</strong>
+                    <ol>
+                        <li>Template Basics: Understanding how templates work in Django.</li>
+                        <li>Template Inheritance: Creating base templates with &lt;{% extends %}&gt; and &lt;{% block %}&gt;.</li>
+                        <li>Template Filters and Tags: Using &lt;{% if %}&gt;, &lt;{% for %}&gt;, custom filters, and custom tags.</li>
+                        <li>Working with Static Files: Serving CSS, JavaScript, and images in templates.</li>
+                        <li>Template Context: Passing context data from views to templates.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 5: Django Forms</strong>
+                    <ol>
+                        <li>Django Forms: Introduction to Django’s form handling system.</li>
+                        <li>Creating Forms: Writing forms for user input.</li>
+                        <li>Form Validation: Using built-in form validation and custom validation methods.</li>
+                        <li>Handling POST Requests: Submitting forms and processing POST data in views.</li>
+                        <li>Form Rendering in Templates: Displaying forms with Django’s form rendering tools.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 6: User Authentication & Authorization</strong>
+                    <ol>
+                        <li>User Model: Working with Django’s default User model.</li>
+                        <li>Authentication Views: Implementing login, logout, and registration views.</li>
+                        <li>Password Hashing: How Django handles password storage securely.</li>
+                        <li>User Permissions: Implementing user permissions for views.</li>
+                        <li>Custom User Model: Modifying the user model for more advanced use cases.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 7: Advanced Models</strong>
+                    <ol>
+                        <li>Model Relationships: Working with ForeignKey, OneToOneField, and ManyToManyField.</li>
+                        <li>Model Methods: Adding custom methods to models.</li>
+                        <li>Model Managers: Customizing queries with model managers.</li>
+                        <li>Unique Constraints: Ensuring uniqueness of fields with unique and unique_together.</li>
+                        <li>Handling Nulls & Defaults: Managing optional fields and default values.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 8: Django Class-Based Views (CBVs)</strong>
+                    <ol>
+                        <li>What are CBVs?: Introduction to class-based views in Django.</li>
+                        <li>Generic Views: Using ListView, DetailView, CreateView, UpdateView, DeleteView.</li>
+                        <li>Mixins: Creating reusable components for CBVs.</li>
+                        <li>Overriding Methods: Customizing behavior in CBVs by overriding methods like get_context_data.</li>
+                        <li>View Decorators: Using decorators in class-based views for authentication and permissions.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 9: Django URL Routing Advanced</strong>
+                    <ol>
+                        <li>Dynamic URLs: Capturing data from URLs using path converters.</li>
+                        <li>Named URLs: Using reverse() and url tags for URL referencing.</li>
+                        <li>Regular Expressions in URLs: Using regex for complex URL patterns.</li>
+                        <li>Handling Multiple Apps: Organizing and routing URLs for projects with multiple apps.</li>
+                        <li>URL Namespaces: Using namespaces to avoid URL conflicts in larger projects.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 10: Django Admin Customization</strong>
+                    <ol>
+                        <li>Customizing the Admin Interface: Configuring model display in the admin.</li>
+                        <li>List Display: Customizing the list view of model data.</li>
+                        <li>Filters and Search: Adding filters and search functionality in the admin.</li>
+                        <li>Inline Models: Using inlines to manage related objects directly within the admin.</li>
+                        <li>Admin Actions: Creating custom actions in the admin panel.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 11: Django Middleware</strong>
+                    <ol>
+                        <li>What is Middleware?: Understanding middleware and how it interacts with requests and responses.</li>
+                        <li>Creating Custom Middleware: Writing custom middleware to modify requests or responses.</li>
+                        <li>Common Middleware: Overview of built-in middleware like AuthenticationMiddleware and SessionMiddleware.</li>
+                        <li>Processing Requests: How Django processes requests through middleware.</li>
+                        <li>Middleware in Views: Using middleware for request-specific behavior.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 12: Django REST Framework (API Development)</strong>
+                    <ol>
+                        <li>Introduction to DRF: Setting up Django REST Framework in a project.</li>
+                        <li>Creating API Views: Writing views using APIView and ViewSet.</li>
+                        <li>Serializers: Converting data between Django models and JSON with serializers.</li>
+                        <li>Authentication in APIs: Securing APIs using token-based authentication.</li>
+                        <li>API Routing: Configuring routes for API endpoints using DRF routers.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 13: Django Testing</strong>
+                    <ol>
+                        <li>Test Framework: Overview of Django’s testing framework.</li>
+                        <li>Writing Unit Tests: Writing tests for models, views, and templates.</li>
+                        <li>Test Client: Simulating HTTP requests and responses in tests.</li>
+                        <li>Test Coverage: Ensuring high test coverage for your application.</li>
+                        <li>Mocking: Using mock data for testing.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 14: Advanced Querying with Django ORM</strong>
+                    <ol>
+                        <li>Complex Queries: Writing complex queries using annotate(), aggregate(), and F() expressions.</li>
+                        <li>Query Optimization: Optimizing queries with select_related() and prefetch_related().</li>
+                        <li>Subqueries: Using subqueries and Subquery expressions in Django.</li>
+                        <li>Transactions: Using transactions to ensure data consistency.</li>
+                        <li>Database Indexing: Creating indexes to optimize query performance.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 15: Django Signals and Hooks</strong>
+                    <ol>
+                        <li>What are Signals?: Introduction to Django signals and their use cases.</li>
+                        <li>Connecting Signals: Using signals like pre_save, post_save, etc.</li>
+                        <li>Custom Signals: Creating and connecting your own signals.</li>
+                        <li>Signal Handlers: Writing signal handlers and connecting them to model events.</li>
+                        <li>Practical Use Cases: Using signals for tasks like sending emails after saving an object.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 16: File Handling in Django</strong>
+                    <ol>
+                        <li>Handling File Uploads: Working with file fields and handling uploads.</li>
+                        <li>Storing Files: Storing uploaded files locally or in cloud storage.</li>
+                        <li>Image Processing: Using libraries like Pillow for image processing.</li>
+                        <li>Serving Files: Serving user-uploaded files in development and production.</li>
+                        <li>File Security: Securing uploaded files and controlling file access.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 17: Django Caching</strong>
+                    <ol>
+                        <li>Caching Basics: Introduction to caching in Django to improve performance.</li>
+                        <li>Cache Backends: Understanding various cache backends (memory, file-based, Redis, etc.).</li>
+                        <li>Per-View Caching: Caching individual views for performance.</li>
+                        <li>Template Caching: Caching specific parts of templates.</li>
+                        <li>Session Caching: Storing session data in cache for scalability.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 18: Django Deployment</strong>
+                    <ol>
+                        <li>Deployment Preparation: Setting up your Django project for deployment.</li>
+                        <li>Deployment on Heroku: Step-by-step guide for deploying Django on Heroku.</li>
+                        <li>Static and Media Files: Handling static files and media in production.</li>
+                        <li>Django Settings for Production: Configuring ALLOWED_HOSTS, DEBUG, and other production settings.</li>
+                        <li>Environment Variables: Managing environment-specific settings using django-environ.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 19: Django Security Best Practices</strong>
+                    <ol>
+                        <li>Django Security Features: Overview of security features like CSRF protection, XSS prevention, and SQL injection.</li>
+                        <li>User Authentication & Permissions: Securing login and registration views.</li>
+                        <li>Secure File Uploads: Best practices for secure file uploads.</li>
+                        <li>Encryption: Using Django’s encryption features to protect sensitive data.</li>
+                        <li>Handling Sensitive Data: Managing API keys, passwords, and other secrets.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 20: Django Deployment (Advanced)</strong>
+                    <ol>
+                        <li>Deployment on AWS: Deploying Django on AWS EC2 or Elastic Beanstalk.</li>
+                        <li>CI/CD with Django: Setting up continuous integration and continuous deployment for Django apps.</li>
+                        <li>Monitoring Django: Using tools like Sentry for error tracking and performance monitoring.</li>
+                        <li>Database Backups: Configuring automatic backups for databases in production.</li>
+                        <li>Scaling Django: Best practices for scaling Django apps as your project grows.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 21: Django Project & Final Review</strong>
+                    <ol>
+                        <li>Build a Django Project: Create a project that combines everything you've learned.</li>
+                        <li>Code Review: Review and improve your code with Django best practices.</li>
+                        <li>Final Testing: Ensure the project is thoroughly tested and works as expected.</li>
+                        <li>Deployment: Deploy the final project on a server like AWS, Heroku, or DigitalOcean.</li>
+                        <li>Wrap Up & Next Steps: Summarize what you've learned and plan for further development.</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-code"></i> Step 10: Learning Python Web Frameworks</h2>
+            
+            <h3>14-Day Python Web Frameworks Plan</h3>
+            <h4>Day 1-7: Learn Flask</h4>
+            <p>Flask is a lightweight and flexible micro-framework for Python, ideal for small to medium-sized projects. Its simplicity makes it a great alternative to Django.</p>
+            
+            <ul>
+                <li>
+                    <strong>Day 1: Introduction to Flask</strong>
+                    <ol>
+                        <li>What is Flask?: Understanding Flask as a micro-framework.</li>
+                        <li>Setup and Installation: Install Flask and set up the environment.</li>
+                        <li>Hello World Application: Create a simple "Hello World" app in Flask.</li>
+                        <li>Understanding Routes: Learn how to define routes and handle HTTP methods.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 2: Templates and Views</strong>
+                    <ol>
+                        <li>Using Jinja2 Templating Engine: Learn about Flask’s templating system.</li>
+                        <li>Dynamic HTML Rendering: Pass data from Python to HTML using templates.</li>
+                        <li>Static Files: Serve CSS, JS, and images in Flask.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 3: Forms and User Input</strong>
+                    <ol>
+                        <li>Handling Forms: Learn how to handle form submissions in Flask.</li>
+                        <li>Form Validation: Implement simple form validation with Flask.</li>
+                        <li>Flask-WTF: Use the Flask-WTF extension for working with forms and CSRF protection.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 4: Databases with Flask</strong>
+                    <ol>
+                        <li>Setting Up SQLAlchemy: Use Flask-SQLAlchemy to connect Flask with databases.</li>
+                        <li>Creating Models: Create and manage models using SQLAlchemy.</li>
+                        <li>Database Migrations: Implement database migrations using Flask-Migrate.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 5: User Authentication</strong>
+                    <ol>
+                        <li>Flask-Login: Set up user authentication and session management.</li>
+                        <li>Registration and Login: Implement user registration, login, and logout features.</li>
+                        <li>Securing Routes: Protect certain routes to be accessible only by authenticated users.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 6: Flask API Development</strong>
+                    <ol>
+                        <li>Flask-RESTful: Build a RESTful API using Flask.</li>
+                        <li>Handling JSON: Send and receive data as JSON in Flask.</li>
+                        <li>API Authentication: Add authentication to your API using tokens (JWT).</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 7: Flask Deployment</strong>
+                    <ol>
+                        <li>Deploying to Heroku: Learn how to deploy your Flask application to Heroku.</li>
+                        <li>Debugging and Logging: Set up proper logging and error handling.</li>
+                        <li>Environment Variables: Use environment variables for configuration.</li>
+                    </ol>
+                </li>
+            </ul>
+        
+            <h4>Day 8-14: Learn FastAPI</h4>
+            <p>FastAPI is a modern, high-performance web framework for building APIs with Python 3.7+ based on standard Python type hints.</p>
+            
+            <ul>
+                <li>
+                    <strong>Day 8: Introduction to FastAPI</strong>
+                    <ol>
+                        <li>What is FastAPI?: Understand FastAPI’s advantages and use cases.</li>
+                        <li>Setting Up FastAPI: Install FastAPI and Uvicorn (ASGI server).</li>
+                        <li>First FastAPI App: Create a simple FastAPI application and run it.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 9: Path Parameters and Query Parameters</strong>
+                    <ol>
+                        <li>Path Parameters: Learn how to pass parameters in the URL.</li>
+                        <li>Query Parameters: Understand how to work with query parameters in FastAPI.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 10: Request Body and Validation</strong>
+                    <ol>
+                        <li>Request Body: Handle JSON request bodies in FastAPI.</li>
+                        <li>Pydantic Models: Use Pydantic for data validation and serialization.</li>
+                        <li>Type Annotations: Leverage Python’s type hints for automatic validation.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 11: Working with Databases in FastAPI</strong>
+                    <ol>
+                        <li>SQLAlchemy with FastAPI: Set up SQLAlchemy for database management in FastAPI.</li>
+                        <li>CRUD Operations: Implement basic Create, Read, Update, Delete operations in FastAPI.</li>
+                        <li>Database Migrations: Use Alembic for database migrations.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 12: User Authentication and Security</strong>
+                    <ol>
+                        <li>OAuth2 with Password (Bearer): Implement OAuth2 for authentication.</li>
+                        <li>JWT Tokens: Use JWT for secure authentication in FastAPI.</li>
+                        <li>Security Best Practices: Learn about security measures such as hashing passwords.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 13: Building APIs with FastAPI</strong>
+                    <ol>
+                        <li>FastAPI Endpoints: Define routes to handle API requests.</li>
+                        <li>Async API Endpoints: Use asynchronous programming for improved performance.</li>
+                        <li>Handling Errors: Implement custom exception handling and response codes.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Day 14: FastAPI Deployment</strong>
+                    <ol>
+                        <li>Deploy FastAPI App: Deploy FastAPI to services like Heroku, AWS, or DigitalOcean.</li>
+                        <li>Dockerizing FastAPI: Learn how to containerize your FastAPI app using Docker.</li>
+                        <li>API Documentation: Explore FastAPI’s auto-generated OpenAPI documentation.</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2><i class="fas fa-rocket"></i> Step 11: PROJECTS</h2>
+            <ul>
+                <li><i class="fas fa-cog"></i> Moving forward, we will continue to build on Live projects if time permits.
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MITS Solutions Web Development Roadmap</p>
+        <p>Made with ❤️ by Parthav</p>
+    </footer>
+</body>
+
+</html>
